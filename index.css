@@ -1,0 +1,75 @@
+/* transition
+-transition property
+-transition duration
+-transition timing function
+-transition delay
+transition: width 5s 4s ease; */
+/* body{
+  background-color: aqua;
+}
+
+div{
+  width: 100px;
+  height: 100px;
+  position:relative;
+  left: 0;
+  background-color: red;
+  transition: transform 4s cubic-bezier(0.25, 0.1, 0.64, 0.1), background-color 1s, left 4s;
+}
+
+div:hover{
+  transform: rotate(45deg);
+  background-color: green;
+  left: 50%;
+} */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* Animation */
+/* @ keyframes
+-animation-name
+-animation-duration
+-animation-delay
+-animation-iteration-count
+-animation-timing-funtion
+-animation-fill-mode
+-animation-direction
+-animation-play-state
+-aniamtion */
+
+.type-words{
+  font-size: 25px;
+  overflow: hidden;
+  border-right: 2px solid red;
+  white-space: nowrap;
+  width: 0;
+  animation-fill-mode: both;
+  animation: typing 3s 2 steps(20,end) alternate backwards, blink .8s infinite backwards;
+  /* animation-direction: alternate; */
+
+}
+
+@keyframes blink{
+  from{border-color: transparent;}
+  to{border-color: red;}
+}
+
+.type-me{
+  font-size: 25px;
+  overflow: hidden;
+  border-right: 2px solid red;
+  white-space: nowrap;
+  width: 0;
+  animation-fill-mode: both;
+  animation: typing 3s steps(20,end);
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-delay: 6s;
+}
+@keyframes typing{
+  0%{width: 0;}
+  100%{width: 100%;}
+}
+.container{
+  display: inline-block;
+}
